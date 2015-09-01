@@ -1,0 +1,41 @@
+\subsection{Irrationality of the square root of 2}
+\begin{theorem}
+There is no rational number whose square is 2.
+\end{theorem}
+
+\begin{proof} 
+We will prove this by contradiction.  
+\par\vspace{0.3 cm}
+Suppose there is a rational number $q$ with $q^2=2$.  By definition, every rational number can be written in the form:
+\[
+q = \frac{m}{n} 
+\]
+where $m$ and $n$ are integers with no common divisors and $n\neq0$.
+\par\vspace{0.3 cm}
+By assumption,
+\[
+q^2 = \frac{m^2}{n^2} = 2
+\]
+so
+\[
+m^2 = 2n^2
+\]
+which means that $m^2$ is an even integer.  
+\par\vspace{0.3 cm}
+We claim that $m$ is even as well.  Suppose $m$ is not even.  Then $m=2k+1$ for some integer $k$, and 
+\[
+m^2 = (2k+1)^2 = 4k^2+4k+1 = 2(2k^2+2k)+1
+\]
+so if $m$ is not even, then $m^2$ is not even as well.  
+\par\vspace{0.3 cm}
+The contrapositive of the statement "If $m$ is not even then $m^2$ is not even" is "If $m^2$ is even, then $m$ is even".
+\par\vspace{0.3 cm}
+So we conclude that $m$ is even.  But this means that $m = 2i$ for some integer $i$, and by substitution
+\[
+m^2 = (2i)^2 = 4i^2 =2n^2
+\]
+which implies that $2i^2 = n^2$ and therefore $n$ is even.  
+\par\vspace{0.3 cm}
+By a similar argument to the one used for $m$, we can say that $n$ is even, but since $m$ is even as well, $m$ and $n$ are both divisible by $2$, contradicting the assumption that $m$ and $n$ have no common factors.
+\end{proof}
+
